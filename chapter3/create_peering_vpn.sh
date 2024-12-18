@@ -69,8 +69,8 @@ az network vnet peering create \
   --vnet-name "${VMVNET}" \
   --remote-vnet "'${gwvnetid}'" \
   --allow-vnet-access \
-  --allow-forwarded-traffic \
-  --use-remote-gateways
+  --allow-forwarded-traffic 
+  #--use-remote-gateways
 check_error $?
 set +x
 
